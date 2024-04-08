@@ -1,0 +1,54 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+body {
+  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: azure;
+
+  overflow-x: hidden;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 1rem;
+
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.footer-container {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 2rem;
+
+  p {
+    margin-inline: auto;
+    color: blue;
+  }
+}

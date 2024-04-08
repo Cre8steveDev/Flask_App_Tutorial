@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for("static", filename="css/index.css")}}">
+{% endblock css %}
+
+
+{% block js %}
+<script src="{{url_for("static", filename="js/index.js")}}" defer></script>
+{% endblock js %}
+
+
+{% block body_content %}
+<main class="main-container">
+	<h1 class="main-header">Welcome to the Home Page!</h1>
+	<p class="main-subtitle">Our little project is for learning building apps with Flask!</p>
+
+</main>
+{% endblock body_content %}
