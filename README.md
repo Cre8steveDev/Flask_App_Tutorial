@@ -22,6 +22,11 @@ In this tutorial, we will guide you through the process of building a full stack
 - Building the frontend using Jinja2 Templating System (HTML), CSS, and JavaScript
 - Deploying the application to a hosting platform
 
+# ARTICLE PUBLISHED ONLINE
+
+- https://dev.to/cre8stevedev/building-a-full-stack-web-application-using-flask-python-web-framework-part-one-5b1i
+- https://dev.to/cre8stevedev/building-a-full-stack-web-application-using-flask-python-web-framework-part-two-1fc3
+
 ## Features
 
 - User registration and login
