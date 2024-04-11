@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 0.8rem;
+  background-color: rgb(54, 64, 70);
+  margin-top: 2rem;
+  border-radius: 1.2rem;
+
+  input,
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type='file'] {
+    color: white;
+  }
+
+  button {
+    background-color: rgb(11, 141, 7);
+    color: white;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
