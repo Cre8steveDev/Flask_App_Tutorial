@@ -1,6 +1,7 @@
-from flask import Blueprint, request, render_template, redirect
-from flask_login import login_required, logout_user, current_user, login_user, flash
+from flask import Blueprint, request, render_template, redirect, flash
+from flask_login import login_required, logout_user, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
+
 
 auth_views = Blueprint("auth", __name__)
 
@@ -103,7 +104,7 @@ def login():
     return render_template("login.html")
 
 
-# Create Sign Out Route 
+# Create Sign Out Route which we'll create a button for
 @auth_views.route("/logout", strict_slashes=False)
 @login_required
 def logout():

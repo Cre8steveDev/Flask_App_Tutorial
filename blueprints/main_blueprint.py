@@ -1,5 +1,5 @@
 from flask import Blueprint, request, render_template, send_from_directory
-
+from flask_login import login_required
 main_views = Blueprint("main", __name__)
 
 # Create routes on this blueprint instance
@@ -10,6 +10,7 @@ def index():
 
 
 @main_views.get("/profile", strict_slashes=False)
+@login_required
 def profile(username):
     # Define application logic for profile page
     return render_template("profile.html", username=username)
